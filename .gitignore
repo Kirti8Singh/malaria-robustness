@@ -1,0 +1,48 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Raw dataset
+Cell Images/
+
+# Model checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Ignore generated results by default
+results/*
+
+# Keep dataset audit and split artifacts
+!results/dataset/
+results/dataset/*
+
+# Preserve verified dataset metadata and split files
+!results/dataset/dataset_summary.json
+!results/dataset/master_metadata.csv
+!results/dataset/master_metadata_patient_split_balanced.csv
+!results/dataset/patient_split_balanced.csv
+!results/dataset/image_properties.csv
+!results/dataset/exact_duplicate_report.csv
+!results/dataset/duplicate_filename_report.csv
+!results/dataset/patient_id_problems.csv
+!results/dataset/non_image_files.txt
+!results/dataset/patient_summary.csv
+
+# Experiment logs
+runs/
+wandb/
+
+# Actual dataset directory
+cell_images/
+
+# Dataset metadata and split artifacts will be reviewed separately

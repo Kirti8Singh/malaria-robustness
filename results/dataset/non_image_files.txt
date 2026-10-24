@@ -1,0 +1,2 @@
+cell_images/Parasitized/Thumbs.db
+cell_images/Uninfected/Thumbs.db
